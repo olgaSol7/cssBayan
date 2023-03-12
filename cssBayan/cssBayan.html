@@ -51,6 +51,20 @@ h1 {
 .accord label:hover {
     color: #000080;   
 }
+.accord a:hover {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+@media (hover: hover) {
+  /* when hover is supported */
+  a:hover {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+  }
+}
 
 .accord input{
     display: none;
@@ -75,11 +89,6 @@ h1 {
     padding: 20px 30px 10px;
 }
 
-img {
-        display: block;
-        margin: 0 auto;
-        max-width: 100%;
-      }
 </style>
 </head>
 
@@ -92,13 +101,12 @@ img {
     <input type="checkbox" name="chacor" id="chacor1" checked="checked" />
     <label for="chacor1">JavaScript is not Java?</label>
     <div class="accord-body">
-        <p>
-        <img srcset="mem.jpeg 480w,
+            <a href="#"><img srcset="mem.jpeg 480w,
                      mem.jpeg 800w"
              sizes="(max-width: 600px) 480px,
                     800px"
              src="mem.jpeg" alt="1">
-             </p>
+            </a>
     </div>
     
     <input type="checkbox" name="chacor" id="chacor2" />
