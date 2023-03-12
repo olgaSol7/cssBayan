@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewing window" content="width=device-width, initial-scale=1">
+<style>
+h1 {
+  font-size: 28px;
+  font-family: "Roboto", monospace;
+  color: #618ad2;
+  margin: 30px;
+}
+
+.accord {
+    margin: 30px auto;
+}
+
+.accord .accord-body {
+    width: calc(100%px);
+    margin: 0 auto;
+    height: 0;
+    color: rgba(0, 0, 0, 0);
+    background-color: #FAF0E6;
+    line-height: 18px;
+    padding: 0 30px;
+    box-sizing: border-box;
+    transition: color 0.5s, padding 0.5s;
+    overflow: hidden;
+    font-family: "Roboto", monospace; 
+    font-size: 16px;
+}
+
+.accord .accord-body p {
+    margin:  20px auto;
+}
+.accord label {
+    cursor: pointer;
+    background-color: #FAF0E6;
+    display: block;
+    padding: 15px 20px;
+    width: 100%;
+    color: #618ad2;
+    font-weight: 300;
+    box-sizing: border-box;
+    z-index: 100;
+    font-family: "Roboto", monospace;   
+    font-size: 18px;
+    margin: 0 0 5px;
+    transition: color .35s;
+}
+
+.accord label:hover {
+    color: #000080;   
+}
+
+.accord input{
+    display: none;
+}
+
+.accord label:before {
+    content: '\002B'; /* (+) */
+    float: right;    
+}
+
+.accord input:checked + label {
+    background-color: #FAF0E6;
+    color: #000080;
+}
+
+.accord input:checked + label:before {
+    content: "\2212"; /* (-) */
+}
+.accord input:checked + label + .accord-body {
+    height: auto;
+    margin-top: -5px;
+    padding: 20px 30px 10px;
+}
+
+img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+      }
+</style>
+</head>
+
+<body>
+
+<h1>CSS Bayan</h1>
+
+<div class="accord">          
+    
+    <input type="checkbox" name="chacor" id="chacor1" checked="checked" />
+    <label for="chacor1">JavaScript is not Java?</label>
+    <div class="accord-body">
+        <p>
+        <img srcset="mem.jpeg 480w,
+                     mem.jpeg 800w"
+             sizes="(max-width: 600px) 480px,
+                    800px"
+             src="mem.jpeg" alt="1">
+             </p>
+    </div>
+    
+    <input type="checkbox" name="chacor" id="chacor2" />
+    <label for="chacor2">You're a programmer</label>
+    <div class="accord-body">
+        <p>
+            <img srcset="post_2.jpeg 480w,
+                        post_2.jpeg 800w"
+                 sizes="(max-width: 600px) 480px,
+                        800px"
+                 src="post_2.jpeg" alt="2">
+                 </p>
+    </div>
+    
+    <input type="checkbox" name="chacor" id="chacor3" />
+    <label for="chacor3">Two classes of a programmer on the remote</label>
+    <div class="accord-body">
+        <img srcset="post_3.jpeg 480w,
+                        post_3.jpeg 800w"
+                 sizes="(max-width: 600px) 480px,
+                        800px"
+                 src="post_3.jpeg" alt="3">
+                 </p>
+    </div>  
+    
+    <input type="checkbox" name="chacor" id="chacor4" />
+    <label for="chacor4">Feature / bug</label>
+    <div class="accord-body">
+        <img srcset="post_4.jpg 480w,
+                        post_4.jpg 800w"
+                 sizes="(max-width: 600px) 480px,
+                        800px"
+                 src="post_4.jpg" alt="4">
+                 </p>
+    </div>  
+    
+    <input type="checkbox" name="chacor" id="chacor5" />
+    <label for="chacor5">Clean code</label>
+    <div class="accord-body">
+        <img srcset="post_5.jpeg 480w,
+                        post_5.jpeg 800w"
+                 sizes="(max-width: 600px) 480px,
+                        800px"
+                 src="post_5.jpeg" alt="5">
+                 </p>
+    </div>  
+
+</body>
+</html>
+
+
+
